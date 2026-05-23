@@ -1,0 +1,161 @@
+- id: 0
+  request:
+    url: /product
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 1
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 2
+  request:
+    url: /cart
+    method: POST
+    body:
+      productId: '1'
+      redir: PRODUCT
+      quantity: '1'
+      price: '133700'
+  response:
+    status: 302
+    body: <<empty>>
+- id: 3
+  request:
+    url: /product
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 4
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 5
+  request:
+    url: /
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 6
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 7
+  request:
+    url: /cart
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 8
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 9
+  request:
+    url: /cart
+    method: POST
+    body:
+      productId: '1'
+      quantity: '-1'
+      redir: CART
+  response:
+    status: 302
+    body: <<empty>>
+- id: 10
+  request:
+    url: /cart
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 11
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 12
+  request:
+    url: /cart
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 13
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 14
+  request:
+    url: /cart
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 15
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+- id: 16
+  request:
+    url: /cart/checkout
+    method: POST
+    body:
+      csrf: bkimgMMRkoyc3klzEVSyrVfX5m8HUEVR
+  response:
+    status: 303
+    body: <<empty>>
+- id: 17
+  request:
+    url: /cart/order-confirmation
+    method: GET
+    body: <<empty>>
+  response:
+    status: 200
+    body: <<html>>
+- id: 18
+  request:
+    url: /academyLabHeader
+    method: GET
+    body: <<empty>>
+  response:
+    status: 101
+    body: <<empty>>
+

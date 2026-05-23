@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "vuala"
+version = "0.1.0"
+description = ""
+authors = ["Anatol Karalkoŭ <anatol1988@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+matplotlib = "^3"
+openai = "^1"
+pyyaml = "^6"
+requests = "^2"
+beautifulsoup4 = "^4"
+rustimport = "^1"
+langchain-openai = "^0.1"
+langchain = "^0.2"
+langchain-community = "^0.2"
+langchain-core = "^0.2"
+langfuse = "^2"
+rich = "^13"
+pydantic = "^1"
+langchainhub = "^0.1"
+grandalf = "^0.8"
+devtools = "^0.12"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+vuala = "vuala:main"
+
+[tool.ruff.format]
+quote-style = "double"

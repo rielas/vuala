@@ -1,0 +1,16 @@
+rust/target/
+.DS_Store
+burp/target/*
+__pycache__/
+*.so
+prompts.jsonl
+.$diagrams.drawio.bkp
+langfuse/data/*
+
+.massassignment.db
+
+.langchain.db
+
+vuala/massassignment/output.md
+
+output.md
